@@ -1,0 +1,17 @@
+def binary_search(arr,target):
+    low=1
+    high=len(arr)-1
+    while(low<=high):
+        mid=low+high//2
+        if arr[mid]==target:
+            return mid
+        else:
+            if arr[mid]<target:
+                low=mid+1
+            else:
+                if arr[mid]>target:
+                    high=mid-1
+        return -1
+arr=[1, 2, 45 , 67]
+target= 98
+print(binary_search(arr, target))
