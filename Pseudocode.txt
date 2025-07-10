@@ -1,0 +1,69 @@
+🔹 1. Two Sum – Pseudocode
+
+Start
+Input list nums and target
+Create empty dictionary called seen
+For i from 0 to length of nums - 1:
+    current ← nums[i]
+    If current in seen:
+        Return [seen[current], i]
+    Else:
+        seen[target - current] ← i
+Stop
+
+🔹 2. Binary Search – Pseudocode
+
+Start
+Input sorted array and target value
+Set low = 0, high = length of array - 1
+While low ≤ high:
+    Set mid = (low + high) // 2
+    If arr[mid] == target:
+        Return mid
+    Else if arr[mid] < target:
+        Set low = mid + 1
+    Else:
+        Set high = mid - 1
+Return -1
+Stop
+
+🔹 3. Anagram Check – Pseudocode
+
+Start
+Input string1 and string2
+If length of string1 ≠ length of string2:
+    Return False
+Sort both strings
+If sorted string1 equals sorted string2:
+    Return True
+Else:
+    Return False
+Stop
+
+🔹 4. Longest Substring Without Repeating Characters – Pseudocode
+
+Start
+Input string s
+Create empty set seen
+Initialize left = 0, maxLength = 0
+For right from 0 to length of s - 1:
+    While s[right] in seen:
+        Remove s[left] from seen
+        Increment left
+    Add s[right] to seen
+    Update maxLength = max(maxLength, right - left + 1)
+Return maxLength
+Stop
+
+🔹 5. Count Palindromic Substrings – Pseudocode
+
+Start
+Input string s
+Initialize count = 0
+For i from 0 to length of s - 1:
+    For j from i to length of s - 1:
+        substring = s[i to j]
+        If substring == reverse(substring):
+            Increment count
+Return count
+Stop
