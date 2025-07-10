@@ -1,0 +1,92 @@
+ 1. Two Sum – Algorithm
+Step 1: Start
+
+Step 2: Take input array nums and target value
+
+Step 3: Create an empty dictionary
+
+Step 4: Loop through each number in the array
+
+Step 5: Check if current number exists in dictionary
+
+Step 6: If yes, display the two indices and stop
+
+Step 7: If not, store (target - current number) in dictionary
+
+Step 8: Stop
+
+ 2. Binary Search – Algorithm
+Step 1: Start
+
+Step 2: Take sorted array and target element
+
+Step 3: Initialize low = 0, high = length - 1
+
+Step 4: While low ≤ high, do the following:
+
+Find mid = (low + high) // 2
+
+If arr[mid] == target, display mid and stop
+
+If target < arr[mid], set high = mid - 1
+
+Else, set low = mid + 1
+
+Step 5: If not found, display -1
+
+Step 6: Stop
+
+ 3. Anagram Check – Algorithm
+Step 1: Start
+
+Step 2: Take two input strings
+
+Step 3: If lengths are different, display "Not Anagram" and stop
+
+Step 4: Sort both strings
+
+Step 5: Compare sorted strings
+
+Step 6: If equal, display "Anagram"
+
+Step 7: Else, display "Not Anagram"
+
+Step 8: Stop
+
+ 4. Longest Substring Without Repeating Characters – Algorithm
+Step 1: Start
+
+Step 2: Take input string
+
+Step 3: Initialize empty set, left = 0, max_len = 0
+
+Step 4: Loop right through string
+
+Step 5: If character at right is in set, remove from left until unique
+
+Step 6: Add s[right] to set
+
+Step 7: Update max_len
+
+Step 8: After loop ends, display max_len
+
+Step 9: Stop
+
+ 5. Count Palindromic Substrings – Algorithm
+Step 1: Start
+
+Step 2: Take input string s
+
+Step 3: Initialize count = 0
+
+Step 4: Loop i from 0 to length - 1
+
+Step 5: Loop j from i to length - 1
+
+Step 6: Extract substring from i to j
+
+Step 7: If substring equals reverse of itself, increment count
+
+Step 8: After loops, display count
+
+Step 9: Stop
